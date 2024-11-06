@@ -1,1 +1,12 @@
-<p>SOME_CODE</p>>
+<!DOCTYPE html>
+<html>
+    <head><title>CODE</title></head>
+    <body>
+        <div id="code" data-qa="code"></div>
+
+        <script type="application/javascript">
+            const query = new URLSearchParams(window.location.search)
+            document.getElementById('code').textContent = query.get('code')
+        </script>
+    </body>
+</html>
